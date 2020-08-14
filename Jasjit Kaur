@@ -1,0 +1,4 @@
+function=input("Enter the filename: ")
+a=function.split(".")
+
+print("The extension of the file is : " +(a[-1]))
