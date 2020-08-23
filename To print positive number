@@ -1,0 +1,12 @@
+list1= []
+a=0
+n = int(input("Enter number of elements : "))
+for i in range(0, n):
+    element = int(input())
+    list1.append(element)
+
+print("\nPositive Numbers in this List are : ")
+while(a < n):
+    if(list1[a] >= 0):
+        print(list1[a], end = '   ')
+    a = a + 1
