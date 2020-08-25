@@ -1,0 +1,19 @@
+def element(d):
+	return d[1]
+
+def most_frequent(k):
+	k = k.lower()
+	d = dict()
+	for i in k:
+		if i in d.keys():
+			d[i] = d[i]+1
+		else:
+			d[i]=1
+
+	d = sorted(d.items(),key=element,reverse=1)
+	for i,j in d:
+		print(i+" = "+str(j))
+
+
+s = input("Please enter a string\n")
+most_frequent(s)
